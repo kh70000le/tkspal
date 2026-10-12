@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="theme-color" content="#111">
+  <title>사네미의 iPhone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" aria-label="사네미의 아이폰 홈 화면">
+    <div class="phone">
+      <div class="bezel">
+        <section class="screen">
+          <div class="wallpaper" aria-hidden="true">
+            <div class="wallpaper-shape shape-orange"></div>
+            <div class="wallpaper-shape shape-red"></div>
+            <div class="wallpaper-shape shape-pink"></div>
+            <div class="wallpaper-shape shape-purple"></div>
+            <div class="wallpaper-shape shape-silver"></div>
+          </div>
+          <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="status-right" aria-label="통신 상태">
+              <span class="signal"><i></i><i></i><i></i><i></i></span>
+              <svg class="wifi" viewBox="0 0 20 16" aria-hidden="true"><path d="M1 5.1a14 14 0 0 1 18 0M4.2 8.2a9 9 0 0 1 11.6 0M7.4 11.3a4 4 0 0 1 5.2 0M10 14.2h.01"/></svg>
+              <span class="battery"><i></i></span>
+            </div>
+          </div>
+          <div class="notch" aria-hidden="true"><span class="speaker"></span><span class="camera"></span></div>
+
+          <section class="app-grid" aria-label="앱 목록">
+            <button class="app" data-app="FaceTime"><span class="icon facetime"><svg viewBox="0 0 64 64"><rect x="8" y="17" width="34" height="30" rx="7"/><path d="m44 25 12-8v30l-12-8z"/></svg></span><span>FaceTime</span></button>
+            <button class="app" data-app="캘린더"><span class="icon calendar"><b>화요일</b><strong>27</strong></span><span>캘린더</span></button>
+            <button class="app" data-app="사진"><span class="icon photos"><span>✿</span></span><span>사진</span></button>
+            <button class="app" data-app="카메라"><span class="icon camera-icon"><span></span></span><span>카메라</span></button>
+            <button class="app" data-app="Mail"><span class="icon mail-icon"><svg viewBox="0 0 64 64"><rect x="10" y="16" width="44" height="32" rx="3"/><path d="m11 18 21 18 21-18"/></svg></span><span>Mail</span></button>
+            <button class="app" data-app="시계"><span class="icon clock-icon"><i></i><b></b></span><span>시계</span></button>
+            <button class="app" data-app="지도"><span class="icon maps"><span>➤</span><b>280</b></span><span>지도</span></button>
+            <button class="app" data-app="날씨"><span class="icon weather"><i></i><b></b></span><span>날씨</span></button>
+            <button class="app" data-app="미리 알림"><span class="icon reminders"><i>🔵</i><i>🔴</i><i>🟠</i><b></b><b></b><b></b></span><span>미리 알림</span></button>
+            <button class="app" data-app="메모"><span class="icon notes"><i></i></span><span>메모</span></button>
+            <button class="app" data-app="주식"><span class="icon stocks"><svg viewBox="0 0 64 64"><path d="m4 45 10-9 8 7 8-21 8 15 8-7 7 5 8-15"/></svg></span><span>주식</span></button>
+            <button class="app" data-app="도서"><span class="icon books">◖<b>◗</b></span><span>도서</span></button>
+            <button class="app" data-app="App Store"><span class="icon appstore">A</span><span>App Store</span></button>
+            <button class="app" data-app="팟캐스트"><span class="icon podcast">◉</span><span>팟캐스트</span></button>
+            <button class="app" data-app="건강"><span class="icon health">♥</span><span>건강</span></button>
+            <button class="app" data-app="홈"><span class="icon home-icon">⌂</span><span>홈</span></button>
+            <button class="app" data-app="Wallet"><span class="icon wallet"><i></i><i></i><i></i></span><span>Wallet</span></button>
+            <button class="app" data-app="설정"><span class="icon settings">⚙</span><span>설정</span></button>
+          </section>
+
+          <div class="page-dots" aria-label="첫 번째 페이지"><i class="selected"></i><i></i><i></i></div>
+          <nav class="dock" aria-label="독">
+            <button class="app" data-app="전화"><span class="icon phone-icon">☎</span><span class="sr-only">전화</span></button>
+            <button class="app" data-app="Safari"><span class="icon safari"><i></i></span><span class="sr-only">Safari</span></button>
+            <button class="app" data-app="메시지"><span class="icon messages"><i></i></span><span class="sr-only">메시지</span></button>
+            <button class="app" data-app="카카오톡"><span class="icon kakao"><b>●</b></span><span class="sr-only">카카오톡</span></button>
+  <main class="stage" aria-label="사네미의 iPhone">
+    <div class="device">
+      <canvas id="phone-screen" aria-label="iPhone 홈 화면"></canvas>
+      <section class="lock-screen" aria-label="iPhone 잠금 화면" aria-hidden="false">
+        <div class="lock-status"><span>9:41</span><span class="status-icons"><i class="cell-signal"></i><svg class="wifi-mark" viewBox="0 0 20 15"><path d="M1 4.5a14 14 0 0 1 18 0M4.3 7.8a9 9 0 0 1 11.4 0M7.7 11a4 4 0 0 1 4.6 0M10 13.5h.01"/></svg><i class="battery-mark"><b></b></i></span></div>
+        <div class="lock-dynamic-island" aria-hidden="true"></div>
+        <div class="lock-date">10월 12일 월요일</div>
+        <div class="lock-clock">9:41</div>
+        <div class="lock-notification-list" aria-label="새 카카오톡 알림"></div>
+        <div class="lock-controls"><button aria-label="손전등">◉</button><button aria-label="카메라">◉</button></div>
+        <button class="lock-unlock-hint">위로 쓸어올려 열기</button>
+        <button class="lock-home-indicator" aria-label="위로 쓸어 홈 화면 열기"><span></span></button>
+      </section>
+      <button class="phone-launch" aria-label="전화 앱 열기"></button>
+      <button class="messages-launch" aria-label="메시지 앱 열기"></button>
+      <button class="kakao" aria-label="카카오톡 앱">
+        <img src="kakaotalk-app-icon.png" alt="카카오톡">
+      </button>
+      <section class="phone-app" aria-label="전화 앱" aria-hidden="true">
+        <div class="app-status"><span>9:41</span><span class="status-icons"><i class="cell-signal"></i><svg class="wifi-mark" viewBox="0 0 20 15"><path d="M1 4.5a14 14 0 0 1 18 0M4.3 7.8a9 9 0 0 1 11.4 0M7.7 11a4 4 0 0 1 4.6 0M10 13.5h.01"/></svg><i class="battery-mark"><b></b></i></span></div>
+        <div class="phone-notch" aria-hidden="true"><i></i><b></b></div>
+        <header class="phone-header"><h1>최근 통화</h1><button class="edit-button">편집</button></header>
+        <div class="call-filters" aria-label="통화 필터"><button class="active">전체</button><button>부재중</button></div>
+        <div class="call-list" aria-label="최근 통화 기록"></div>
+        <nav class="phone-tabs" aria-label="전화 앱 메뉴">
+          <button><svg viewBox="0 0 24 24"><path d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"/></svg><span>즐겨찾기</span></button>
+          <button class="selected"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>최근 통화</span></button>
+          <button><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.4-3.5 2.4-5.4 6-5.4s5.6 1.9 6 5.4M16 5.3a3 3 0 0 1 0 5.8m1.2 3.4c2.2.5 3.4 2.1 3.7 4.7"/></svg><span>연락처</span></button>
+          <button><svg viewBox="0 0 24 24"><circle cx="6" cy="5" r="1.15"/><circle cx="12" cy="5" r="1.15"/><circle cx="18" cy="5" r="1.15"/><circle cx="6" cy="12" r="1.15"/><circle cx="12" cy="12" r="1.15"/><circle cx="18" cy="12" r="1.15"/><circle cx="6" cy="19" r="1.15"/><circle cx="12" cy="19" r="1.15"/><circle cx="18" cy="19" r="1.15"/></svg><span>키패드</span></button>
+          <button><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h6"/></svg><span>음성 사서함</span></button>
+        </nav>
+        <button class="home-exit" aria-label="나가기, 홈 화면으로 돌아가기"><span></span></button>
+      </section>
+      <section class="messages-app" aria-label="메시지 앱" aria-hidden="true">
+        <div class="app-status"><span>9:41</span><span class="status-icons"><i class="cell-signal"></i><svg class="wifi-mark" viewBox="0 0 20 15"><path d="M1 4.5a14 14 0 0 1 18 0M4.3 7.8a9 9 0 0 1 11.4 0M7.7 11a4 4 0 0 1 4.6 0M10 13.5h.01"/></svg><i class="battery-mark"><b></b></i></span></div>
+        <div class="phone-notch" aria-hidden="true"><i></i><b></b></div>
+        <div class="message-inbox">
+          <header class="message-header"><h1>메시지</h1><button class="message-edit">편집</button><button class="compose-button" aria-label="새 메시지 작성"><svg viewBox="0 0 24 24"><path d="M13.5 5.5 18.5 10.5M4 20l4.2-.8L19.5 7.9a2.1 2.1 0 0 0-3-3L5.2 16.2z"/></svg></button></header>
+          <label class="message-search"><span>⌕</span><input type="search" placeholder="검색" aria-label="메시지 검색"></label>
+          <div class="conversation-list" aria-label="대화 목록"></div>
+        </div>
+        <section class="message-thread" aria-label="대화 내용" hidden>
+          <header class="thread-header"><button class="thread-back"><span>‹</span> 메시지</button><div class="thread-contact"><div class="thread-avatar"></div><strong></strong><small></small></div><button class="thread-info" aria-label="대화 정보">ⓘ</button></header>
+          <div class="thread-scroll"></div>
+          <form class="message-composer"><button type="button" class="add-attachment" aria-label="첨부">＋</button><input type="text" placeholder="iMessage" aria-label="메시지 입력"><button type="submit" class="send-message" aria-label="보내기" disabled>↑</button></form>
+        </section>
+        <button class="messages-home-exit" aria-label="나가기, 홈 화면으로 돌아가기"><span></span></button>
+      </section>
+      <section class="kakao-app" aria-label="카카오톡" aria-hidden="true">
+        <div class="kakao-status"><span>9:41</span><span class="status-icons"><i class="cell-signal"></i><svg class="wifi-mark" viewBox="0 0 20 15"><path d="M1 4.5a14 14 0 0 1 18 0M4.3 7.8a9 9 0 0 1 11.4 0M7.7 11a4 4 0 0 1 4.6 0M10 13.5h.01"/></svg><i class="battery-mark"><b></b></i></span></div>
+        <div class="kakao-notch" aria-hidden="true"></div>
+        <section class="kakao-inbox">
+          <header class="kakao-header"><h1>채팅</h1><button class="kakao-search" aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button><button class="kakao-compose" aria-label="새 채팅"><svg viewBox="0 0 24 24"><path d="M12 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/><path d="m14.5 5.5 4 4M10 18l1-4 8.5-8.5a2.1 2.1 0 0 1 3 3L14 17z"/></svg></button><button class="kakao-settings" aria-label="채팅 설정"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button></header>
+          <label class="kakao-searchbar"><span><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></span><input type="search" placeholder="친구, 채팅방 검색" aria-label="카카오톡 검색"></label>
+          <div class="kakao-chat-list" aria-label="카카오톡 채팅 목록"></div>
+          <nav class="kakao-tabs" aria-label="카카오톡 탭">
+            <button data-tab="친구" disabled aria-disabled="true" title="친구 탭은 사용할 수 없습니다"><span class="tab-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c.4-3.5 2.7-5.5 7-5.5s6.6 2 7 5.5"/></svg></span>친구</button>
+            <button class="selected" data-tab="채팅"><span class="tab-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3z"/><path d="M8 10h8M8 13h5"/></svg></span>채팅<i class="tab-badge">3</i></button>
+            <button data-tab="지금"><span class="tab-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3z"/><circle cx="9" cy="10" r="1"/><circle cx="12" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg></span>지금</button>
+            <button data-tab="쇼핑"><span class="tab-icon"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 12H4z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></span>쇼핑</button>
+            <button data-tab="더보기"><span class="tab-icon"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></span>더보기</button>
+          </nav>
+          <div class="home-indicator"></div>
+        </section>
+      </div>
+      <div class="side-button side-left"></div><div class="side-button side-right"></div>
+        <section class="kakao-room" hidden>
+          <header class="kakao-room-header"><button class="kakao-back"><span>‹</span><b>채팅</b></button><div class="kakao-room-title"><strong></strong><small></small></div><button class="room-search" aria-label="대화 검색"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button><button class="room-menu" aria-label="채팅방 메뉴">☰</button></header>
+          <div class="kakao-room-date"></div>
+          <div class="kakao-message-list"></div>
+          <form class="kakao-composer"><button type="button" aria-label="첨부">＋</button><input type="text" placeholder="메시지 입력" aria-label="카카오톡 메시지 입력"><button type="button" class="kakao-emoticon" aria-label="이모티콘">☺</button><button class="kakao-send" type="submit" disabled>↑</button></form>
+        </section>
+        <button class="kakao-home-exit" aria-label="나가기, 홈 화면으로 돌아가기"><span></span></button>
+      </section>
+      <div class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <div class="app-toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
